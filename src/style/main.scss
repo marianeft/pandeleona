@@ -10,14 +10,14 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("../public/fonts/VarelaRound-Regular.ttf");
+  src: url("../fonts/VarelaRound-Regular.ttf");
   font-family: "Varela Round";
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("..public/fonts/Soft Marshmallow.otf");
+  src: url("../fonts/Soft Marshmallow.otf");
   font-family: "Marshie";
   font-weight: 400;
 }
@@ -27,9 +27,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html, body {
+  scroll-behavior: smooth;
   min-height: 100vh;
 }
 
@@ -86,14 +88,14 @@ nav {
     align-items: center;
     padding: 15px 10px;
 
-    width: 6rem;
-    height: 2.8rem;
+    width: 6.5rem;
+    height: 3rem;
 
     text-decoration: none;
     
     color: var(--Color-4, #E9592B);
     font-family: "Soft Marshmallow";
-    font-size: 20px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -106,13 +108,11 @@ nav {
 
       color: var(--Color-2, #FCF9F5);
       font-family: "Soft Marshmallow";
-      font-size: 20px;
+      font-size: 1.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       background-color: var(--primary);
-
-      transform: translateY(1.5rem);
 
       i {
         color: var(--accent);
@@ -164,88 +164,25 @@ nav {
   }
 }
 
+footer{
+  font-family: "Soft Marshmallow";
+height: 60px;
+width: 100%;
+display: flex;
+background-color: #E9592B;
+justify-content: center;
+padding: 10px;
+font-size: 1.5rem;
 
-/*For Text in Containers*/
-.ui {
-	&.text {
-		&.size-textxs {
-			font-size: 18px;
-			font-weight: 400;
-			font-style: normal;
-		}
-		&.size-texts {
-			font-size: 20px;
-			font-weight: 400;
-			font-style: bold;
-		}
-		&.size-textmd {
-			font-size: 25px;
-			font-weight: 400;
-			font-style: normal;
-			@media only screen and (max-width: 1050px) {
-				font-size: 23px;
-			}
-		}
-	}
+.logo{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 550px) {
-	.ui.text.size-textxs {
-		font-size: 21px;
-	}
-	.ui.text.size-texts {
-		font-size: 33px;
-	}
-	.ui.text.size-textmd {
-		font-size: 34px;
-	}
-	.ui.text.size-textlg {
-		font-size: 36px;
-	}
-	.ui.text.size-textxl {
-		font-size: 40px;
-	}
+img{
+  height: 1.5rem;
+  width: auto;
+  margin: 0px 10px;
 }
-
-.ui {
-	&.text {
-		color: var(--gray_50);
-		font-family: Varela Round;
-
-		&.size-textlg {
-			font-size: 37px;
-			font-weight: 400;
-			font-style: bold;
-			@media only screen and (max-width: 1050px) {
-				font-size: 35px;
-			}
-		}
-
-		&.size-textxl {
-			font-size: 38px;
-			font-weight: 400;
-			font-style: bold;
-			@media only screen and (max-width: 1050px) {
-				font-size: 36px;
-			}
-		}
-
-		&.size-text2xl {
-			font-size: 40px;
-			font-weight: 400;
-			font-style: bold;
-			@media only screen and (max-width: 1050px) {
-				font-size: 38px;
-			}
-		}
-
-		&.size-text3xl {
-			font-size: 50px;
-			font-weight: 400;
-			font-style: bold;
-			@media only screen and (max-width: 1050px) {
-				font-size: 46px;
-			}
-		}
-	}
 }
