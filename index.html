@@ -5,42 +5,52 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/preload.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Pandeleona</title>
   </head>
   <header>
     <img src="img/pandeleona.svg" alt="">
-    <h1 class="pdl-header"> Pan de Leona</h1>
-    <nav>
-      <a href="#" class="active">
-        <p>Home</p>
-      </a>
+      <h1 class="pdl-header"> Pan de Leona</h1>
+        <nav>
+          <a href="#" class="active">
+            <p>Home</p>
+          </a>
 
-      <a href="#menu">
-        <p>Menu</p>
-      </a>
+          <a href="#menu">
+            <p>Menu</p>
+          </a>
 
-      <a href="#order">
-        <p>Order</p>
-      </a>
-      
-      <a href="#about">
-        <p>About</p>
-      </a>
-
-    </nav>
+          <a href="#order">
+            <p>Order</p>
+          </a>
+          
+          <a href="#about">
+            <p>About</p>
+          </a>
+      </nav>
   </header>
   <body>
     <main id="replace">
 
     </main>
-    <script type="module" src="/src/main.js"></script>
+      <script type="module" src="/src/main.js"></script>
 
-    <footer class="footer">
-      <div class="logo">
-        <img src="/img/img_logo.png" alt="Close" class="close_one" />
-        <p class="pandeleona ui text size-texts">Pan de Leona</p>
-        <p class="twothousandtwen ui text size-texts"> © 2024</p>
-      </div>
-    </footer>
+      <!-- READ MEE - Inline JS Func for loading-page duration-->
+      <script>
+        window.onload = function() {
+          setTimeout(function() {
+            document.querySelector(".loading-page").style.display = "none"; 
+            document.querySelector(".gif-img").style.display = "none"; 
+          }, 3000);
+        };
+      </script>
+
+      <footer class="footer">
+        <div class="logo">
+          <img src="/img/img_logo.png" alt="Close" class="close_one" />
+          <p class="pandeleona ui text size-texts">Pan de Leona</p>
+          <p class="twothousandtwen ui text size-texts"> © 2024</p>
+        </div>
+      </footer>
   </body>
 </html>

@@ -3,22 +3,21 @@ main.route-menu{
   .menu-page {
     width: 100%;
   }
-
-  
-  .menu_one {
+  .menu_title{
+    margin: 10px;
+    padding: 30px;
     font-size: 2rem;
     font-family: "Soft Marshmallow";
-    color: var(--deep_orange_600) !important;
+    color: #E9592B;
+    text-align: center;
   }
 
   .menu-container {
-    gap: var(--space-md);
+    height: 1200px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
     width: 100%;
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
 
     @media only screen and (max-width: 1050px) {
@@ -27,12 +26,13 @@ main.route-menu{
   }
 
   .menu_page {
+    justify-content: center;
+    margin: 0px 10%;
+    padding: 10px;
     gap: var(--space-md);
-    background-color: var(--deep_orange_600);
     flex: 1;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     position: absolute;
     border-radius: var(--radius-sm);
@@ -52,43 +52,61 @@ main.route-menu{
 
 
   .product {
-    background-color: burlywood;
+    object-fit:contain;  
+    display: block;
+    margin: 60px 15px;
+    background-color: #FCF9F5;
     position: relative;
-    width: 30%;
+    height: 70%;
+    width: 90%;
     text-align: center;
-    line-height: 46px;
-    border-radius: 20px;
-    flex-grow: 1;
+    line-height: 30px;
+    border-radius: 30px;
 
+    img{
+      margin-top: -100px;
+      width: 90%;
+    }
     @media only screen and (max-width: 1050px) {
       width: 100%;
     }
   }
+  .product:hover{
+    background-color: #1F2123;
+    transform: scale(1.1);
+    color: #FCF9F5;
+  }
 
   .columnproduct {
-    margin-top: 0px;
-    gap: var(--space-xs);
+    margin: 10px;
+    padding: 20px;
     display: flex;
-    position: relative;
-    background-color: var(--deep_orange_600);
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
     border-radius: var(--radius-sm);
+    font-family: "Soft Marshmallow";
+
+    .product-1{
+      font-size: 2rem;
+      color: #E9592B;;
+    }
+    .price{
+      font-size: 1rem;
+    }
+
+
     @media only screen and (max-width: 550px) {
-      padding: 20px;
+      padding: 0px;
     }
   }
 
   .classic_one, .malunggay_one, .cheese_one, .choco_one, .matcha_one, .ubecheese_one, .yema_one {
-    max-width: 100%;
-    object-fit: cover;  
-    height: 238px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    max-height: 200px;
+    object-fit:cover;
+    overflow: visible;
+    margin: 10px;
     z-index: 1;
     position: relative;
-    object-fit: cover;
     @media only screen and (max-width: 1050px) {
       margin-left: 0px;
       margin-right: 0px;

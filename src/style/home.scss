@@ -26,76 +26,100 @@ header {
 }
 
 .tagline-section{
-	height: 700px;
+	height: 650px;
 	background-color: #E9592B;
 	object-fit: contain;
 	overflow: visible;
-	img{
-		width: 60%;
-		float: inline-end;
-		margin-top: -300px;
+	width: 100%;
+
+	.image{
+		width: 30%;
+		height: auto;
+		float: right;
+		contain: layout;	
+		overflow: visible;
+
+		img{
+			height: 100%;
+			width: auto;
+			right: 0px;
+			margin-top: 100px;
+			margin-left: 600px;
+			
+		}
 	}
 	.rowtagline {
 		float: left;
-		height: 60%;
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
+		width: 70%;
+		height: auto;
+		display: grid;
 		align-items: start;
-		position: absolute;
-		margin-left: 10%;
-	}	
-	.tagline {
-		color: var(--gray_50_01) !important;
-		max-width: 100%;
-		margin-top: 10%;
-	}
-	.tagline-span{
-		display: flex;
-		flex-shrink: 0;
-		color: var(--Color-2, #FCF9F5);
-		font-family: "Soft Marshmallow";
-		font-size: 2.9rem;
-		width: 55%;
-		line-height: 50px;
-		#pandeleona{
-			color: #FFCC3C;
+		position: relative;
+		contain: inline-size layout;
+		left: 5%;
+	
+		.tagline {
+			color: var(--gray_50_01) !important;
+			top: 30%;
+			left: 9%;
 		}
-	}
-	.description {
-		color: var(--Color-2, #FCF9F5);
-		font-family: "Varela Round";
-		font-size: 1rem;
-		width: 50%;
-		line-height: 30px;
-		position: absolute;
-		top: 55%;
-	}
-	.rowbutton{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-		align-items: center;
-		.home-btn{
-			margin-top: 27%;
-			margin-left: 10%;
-			width: 15%;
-			font-size: 1.3rem;
-			border-radius: 10px;
-			border-style: none;
-			background: var(--Color-2, #FCF9F5);
-			padding: 10px 20px;
+		.tagline-span{
+			display: flex;
+			flex-shrink: 0;
+			color: var(--Color-2, #FCF9F5);
 			font-family: "Soft Marshmallow";
-
-			a {
-				color: #E9592B;
-				text-decoration: none;
+			font-size: 2.8rem;
+			height: auto;
+			line-height: 50px;
+			text-align: left;
+			
+			#pandeleona{
+				color: #FFCC3C;
 			}
 		}
-		.home-btn:hover {
-			color: #E9592B;
-			font-family: "Soft Marshmallow";
-			background-color: #1F2123;
+		.description {
+			color: var(--Color-2, #FCF9F5);
+			font-family: "Varela Round";
+			font-size: 1rem;
+			width: 60%;
+			line-height: 30px;
+			position: absolute;
+			top: 35%;
+			text-align: left;
+			contain: paint;
+			margin-top: 10%;
+			margin-left: 9%;
+			z-index: 0;
+			
+		}
+	
+		.rowbutton{
+			margin-top: 35%;
+			justify-content: flex-end;
+			align-items: center;
+			.home-btn{
+				margin-top: 10px;
+				margin-left: 10%;
+				width: 20%;
+				font-size: 1.3rem;
+				border-radius: 10px;
+				border-style: none;
+				background: var(--Color-2, #FCF9F5);
+				padding: 10px 30px;
+				font-family: "Soft Marshmallow";
+				z-index: 1;
+
+				a {
+					color: #E9592B;
+					text-decoration: none;
+					font-size: 1.5rem;
+				}
+			}
+			.home-btn:hover {
+				color: #E9592B;
+				font-family: "Soft Marshmallow";
+				background-color: #1F2123;
+			}
 		}
 	}
 	
@@ -105,6 +129,7 @@ header {
 			width: 100%;
 			padding-left: 20px;
 			padding-right: 20px;
+			display: block;
 		img{
 			height: 80%;
 		}
@@ -114,69 +139,81 @@ header {
 		}
 		.tagline-span{
 			font-size: 2rem;
+			width: 80%;
 		}
 		.description{
-			font-size: 0.8rem;
+			font-size: 0.5rem;
+			width: 80%;
 		}
-		.rowbutton a{
-			top: 30%;
+		.rowbutton button{
+			padding: auto;
+			font-size: 0.5rem;
+			margin-top: 300px;
 		}
 	}
 	}
 }
 
 .product-display-section{
-	display: block;
+	display: grid;
 	background-color: #FCF9F5;
 	width: 100%;
-	height: 650px;
-	
-	text-align: center;
-	flex-shrink: 0;
-	color: #1F2123;
-	font-family: "Soft Marshmallow";
-	font-size: 2.9rem;
-	overflow: hidden;
+	display: block;
+	padding: 10px;
+	margin: 10px;
 	
 	.title {
 		padding: 20px;
 		color: #E9592B;
+		text-align: center;
+		flex-shrink: 0;
+		color: #1F2123;
+		font-family: "Soft Marshmallow";
+		font-size: 2.9rem;
+		overflow: hidden;
 	}
 	.pandesaldisplay {
 		position:static;
 		object-fit: contain;
-		flex-wrap: wrap-reverse
+		flex-wrap: wrap
 	}
 	
 	.product-display {
 		margin: 20px;
 		align-self: stretch;
-		display: flex;
+		display: block;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
 		margin-right: auto;
 		transition: 0.3s;
 		img{
-			width: 30%;
+			width: 40%;
+			margin: -50px;
 		}
 		img:hover{
-			width: 35%;
+			width: 41%;
 			opacity: 0.9;
 			margin: -50px -80px;
+			transform: rotate(45deg);
 		}
 	}
 	.product {
-		display:inline-block;
-		margin-top: -80px;
+		display:block;
 		flex-shrink: 0;
+		padding: 30px;
+		justify-content: center;
 		.name{
 			font-size: 1.5rem;
 			font-family: "Soft Marshmallow";
+			text-align: center;
+			color: #E9592B;
 		}
 		.description{
 			font-family: "Varela Round";
 			font-size: 1rem;
+			text-align: center;
+			margin: 0% 35%;
 		}
 	}
 
@@ -186,9 +223,11 @@ header {
 	}
 	.product-display {
 		padding: 0px 20px;
+		flex-direction: column;
 	}
 	.pandesaldisplay {
-		width: 30%;
+		display: block;
+		width: 20%;
 		overflow: hidden;
 	}
 }
@@ -208,6 +247,7 @@ header {
 	background-repeat: no-repeat;
 
 	.columnabout_us{
+		margin: 50px 0px;
 		display: block;
 		height: 200px;
 		text-align: center;
@@ -215,30 +255,33 @@ header {
 
 		.title{
 			font-family: "Soft Marshmallow";
-			margin: 20px;
 			padding: 10px;
 			font-size: 2rem;
 			color: #1F2123;
+			margin-top: 30px;
 
 		}
 		.description{
+			margin-top: -200px;
+			margin-bottom: 50px;
 			font-family: "Varela Round";
 			padding: 10px;
-			color: var(--Color-2, #FCF9F5);
+			color: var(--Color-2, #1F2123);
 			font-size: 1rem;
 		}
 		.about-btn{
 			font-size: 1.3rem;
-			border-radius: 10px;
+			border-radius: 15px;
 			border-style: none;
 			background: #FFCC3C;
-			padding: 10px 25px;
+			padding: 10px 30px;
 			font-family: "Soft Marshmallow";
 
 			a{
 				padding: 0px 20px;
 				text-decoration: none;
 				color: #1F2123;
+				font-size: 1.5rem;
 			}
 		}
 		.about-btn:hover{
