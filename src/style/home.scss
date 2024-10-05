@@ -26,25 +26,26 @@ header {
 }
 
 .tagline-section{
-	height: 650px;
+	height: 630px;
 	background-color: #E9592B;
 	object-fit: contain;
 	overflow: visible;
 	width: 100%;
 
 	.image{
-		width: 30%;
+		width: 20%;
 		height: auto;
 		float: right;
 		contain: layout;	
 		overflow: visible;
+		object-fit: contain;
 
 		img{
 			height: 100%;
-			width: 900px;
+			width: 1200px;
 			right: 0px;
-			margin-top: 10px;
-			margin-left: 700px;
+			margin-top: -30px;
+			margin-left: 570px;
 			
 		}
 	}
@@ -56,11 +57,11 @@ header {
 		align-items: start;
 		position: relative;
 		contain: inline-size layout;
-		left: 5%;
+		left: 2%;
 	
 		.tagline {
 			color: var(--gray_50_01) !important;
-			top: 30%;
+			top: 20%;
 			left: 9%;
 		}
 		.tagline-span{
@@ -84,22 +85,22 @@ header {
 			width: 60%;
 			line-height: 30px;
 			position: absolute;
-			top: 35%;
+			top: 33%;
 			text-align: left;
 			contain: paint;
-			margin-top: 10%;
+			margin-top: 3%;
 			margin-left: 9%;
 			z-index: 0;
 			
 		}
 	
 		.rowbutton{
-			margin-top: 35%;
+			margin-top: 28%;
 			justify-content: flex-end;
 			align-items: center;
 			.home-btn{
-				margin-top: 10px;
-				margin-left: 10%;
+				margin-top: 3%;
+				margin-left: 6.5%;
 				width: 20%;
 				font-size: 1.3rem;
 				border-radius: 10px;
@@ -107,7 +108,7 @@ header {
 				background: var(--Color-2, #FCF9F5);
 				padding: 10px 30px;
 				font-family: "Soft Marshmallow";
-				z-index: 1;
+				z-index: 2;
 
 				a {
 					color: #E9592B;
@@ -121,6 +122,17 @@ header {
 				background-color: #1F2123;
 			}
 		}
+
+		.rowbottom{
+			height: auto;
+			width: 100%;
+			overflow: visible;
+			margin-top: 160px;
+			margin-left: -100px;			
+			object-fit: contain;
+		}
+
+
 	}
 	
 	
@@ -162,22 +174,22 @@ header {
 	width: 100%;
 	display: block;
 	padding: 10px;
-	margin: 10px;
 	
 	.title {
-		padding: 20px;
-		color: #E9592B;
+		padding: 30px 20px;
+		margin-top: 100px;
 		text-align: center;
 		flex-shrink: 0;
 		color: #1F2123;
 		font-family: "Soft Marshmallow";
-		font-size: 2.9rem;
-		overflow: hidden;
+		color: #E9592B;
+		font-size: 3rem;
 	}
 	.pandesaldisplay {
 		position:static;
 		object-fit: contain;
-		flex-wrap: wrap
+		flex-wrap: wrap;
+		margin: 0% 5%;
 	}
 	
 	.product-display {
@@ -193,18 +205,48 @@ header {
 			width: 40%;
 			margin: -50px;
 		}
-		img:hover{
-			width: 41%;
-			opacity: 0.9;
-			margin: -50px -80px;
-			transform: rotate(45deg);
+
+		#choco{
+			transform: scale(0.7);
+			margin-bottom: 30px;
+			position:static;
 		}
+
+		#choco:hover{
+			transform: scale(0.9);
+		}
+	
+		#malunggay{
+			transform: scale(0.6);
+		}
+		#malunggay:hover{
+			transform:scale(0.7);
+			// margin: 0px 5px
+		}
+
+		#matcha{
+			transform: scale(0.9);
+			margin-bottom: 0px;
+		}
+
+		#matcha:hover{
+			transform: scale(1.1);
+		}
+
+		// img:hover{
+		// 	width: 41%;
+		// 	opacity: 0.9;
+		// 	// margin: -50px -80px;
+		// 	transform:scale(1.5)
+		// }
 	}
 	.product {
 		display:block;
 		flex-shrink: 0;
 		padding: 30px;
+		margin: 30px 0px;
 		justify-content: center;
+
 		.name{
 			font-size: 1.5rem;
 			font-family: "Soft Marshmallow";
@@ -317,6 +359,11 @@ header {
 		.freshly_baked{
 			display: block;
 			flex-direction: row-reverse;
+			justify-content: center;
+			margin-left: 42%;
+		}
+		#phone-icon{
+			margin-left: 44%;
 		}
 	}
 	.feature:hover{
@@ -392,28 +439,30 @@ header {
 		height: auto;
 		
 		.fact{
-			background-image: url(img/img_pandesal.png);
+			background-color: #E9592B;
 			background-size: 100%;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 
-			border-radius: 100px;
+			border-radius: 500px;
 			height: auto;
-			margin: 0px 30%;
+			margin: 3% 35%;
 			justify-content: center;
 			text-align: center;
-			padding: 10%;
+			padding: 5%;
 
 			.description-span{
 				font-family: "Soft Marshmallow";
 				font-size: 1.5rem;
 				color: #1F2123;
+				line-height: 10px;
 			}
 			.description-span-1{
 				font-family: "Varela Round";
 				font-size: 1rem;
-				color: #1F2123;
+				color: #FCF9F5;
+				line-height: 10px;
 			}
 		}
 		.fact:hover{

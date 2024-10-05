@@ -18,7 +18,7 @@
   font-display: swap;
   font-style: normal;
   src: url("../fonts/Soft Marshmallow.otf");
-  font-family: "Marshie";
+  font-family: "Soft Marshallow";
   font-weight: 400;
 }
 
@@ -165,14 +165,15 @@ nav {
 }
 
 footer{
-  font-family: "Soft Marshmallow";
+  font-family: "Valera Round";
 height: 60px;
 width: 100%;
 display: flex;
-background-color: #E9592B;
+background-color: #1F2123;
+color: #FCF9F5;
 justify-content: center;
 padding: 10px;
-font-size: 1.5rem;
+font-size: 1rem;
 
 .logo{
   display: flex;
