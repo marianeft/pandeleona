@@ -7,6 +7,21 @@ main.route-about{
     
     overflow: hidden;
 
+    @font-face {
+      font-display: swap;
+      font-style: normal;
+      src: url(".fonts/VarelaRound-Regular.ttf") format('opentype');
+      font-family: "Varela Round";
+      font-weight: 400;
+    }
+    @font-face {
+      font-display: swap;
+      font-style: normal;
+      src: url("./fonts/SoftMarshmallow.otf") format('opentype');
+      font-family: "Soft Marshallow";
+      font-weight: 400;
+    }
+
     .container {
         width: 100%;
         // height: 1348px;

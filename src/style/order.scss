@@ -8,6 +8,21 @@ main.route-order{
     --variable-collection-color-4: rgba(233, 89, 43, 1);
     --variable-collection-color-5-link: rgba(61, 124, 187, 1);
     
+    @font-face {
+      font-display: swap;
+      font-style: normal;
+      src: url(".fonts/VarelaRound-Regular.ttf") format('opentype');
+      font-family: "Varela Round";
+      font-weight: 400;
+    }
+    @font-face {
+      font-display: swap;
+      font-style: normal;
+      src: url("./fonts/SoftMarshmallow.otf") format('opentype');
+      font-family: "Soft Marshallow";
+      font-weight: 400;
+    }
+
     overflow: hidden;
     background-color: var(--variable-collection-color-2);
     display: flex;

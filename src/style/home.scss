@@ -1,4 +1,20 @@
-main.route-home{    
+main.route-home{
+	
+	@font-face {
+		font-display: swap;
+		font-style: normal;
+		src: url(".fonts/VarelaRound-Regular.ttf") format('opentype');
+		font-family: "Varela Round";
+		font-weight: 400;
+	  }
+	  @font-face {
+		font-display: swap;
+		font-style: normal;
+		src: url("./fonts/SoftMarshmallow.otf") format('opentype');
+		font-family: "Soft Marshallow";
+		font-weight: 400;
+	  }
+	  
 @media only screen and (max-width: 550px) {
 	.menu-link {
 		padding-left: 20px;
