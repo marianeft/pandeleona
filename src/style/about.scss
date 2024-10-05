@@ -13,14 +13,16 @@ main.route-about{
         margin-top: -10%;
       }
       
-      .container .overlap {
+      .container, .overlap {
         position: relative;
-        height: 2937px;
+        height: 3337px;
         top: 100px;
         background-color: var(--variable-collection-color-2);
       }
       
       .container .header {
+        margin-left: 3%;
+        justify-content: center;
         position: absolute;
         width: 1094px;
         height: 453px;
@@ -30,26 +32,29 @@ main.route-about{
       }
       
       .container .overlap-group {
+        margin-left: -5%;
         position: relative;
         width: 100%;
         height: 453px;
+        margin-top: -10%
       }
       
       .container .logo {
         position: absolute;
-        width: 286px;
+        width: auto;
         height: 322px;
         top: 131px;
-        left: 405px;
+        margin: 0px 40%;
       }
       
       .container .text-wrapper {
+        text-align: center;
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         opacity: 0.12;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: #e9592b;
         font-size: 380px;
@@ -65,13 +70,17 @@ main.route-about{
         height: 1276px;
         top: 528px;
         left: 97px;
+        text-align: center;
+        
       }
       
       .container .history-section {
+        margin-left: 0%;
+
         position: absolute;
         width: 954px;
         height: 282px;
-        top: 0;
+        top: -20px;
         left: 69px;
       }
       
@@ -79,18 +88,19 @@ main.route-about{
         width: 948px;
         top: 116px;
         left: 0;
+        margin-left: 20px;
         font-size: 18px;
         line-height: 28px;
         position: absolute;
         font-family: "Varela Round", Helvetica;
         font-weight: 400;
-        color: var(--variable-collection-color-3);
         letter-spacing: 0;
       }
       
       .container .div {
         top: 61px;
-        left: 327px;
+        left: 340px;
+        margin-left: 30px;
         font-size: 20px;
         line-height: normal;
         white-space: nowrap;
@@ -99,12 +109,14 @@ main.route-about{
         font-weight: 400;
         color: var(--variable-collection-color-3);
         letter-spacing: 0;
+        text-align: center;
       }
       
       .container .about-PDL {
         position: absolute;
         top: 0;
-        left: 329px;
+        left: 335px;        
+        margin-left: 30px;
         font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-4);
@@ -124,11 +136,12 @@ main.route-about{
       }
       
       .container .mission-section {
+        
         position: absolute;
         width: 992px;
         height: 531px;
-        top: 0;
-        left: 77px;
+        top: 0px;
+        left: 100px;
       }
       
       .container .mission {
@@ -136,7 +149,7 @@ main.route-about{
         width: 419px;
         height: 251px;
         top: 151px;
-        left: 0;
+        left: -20px;
       }
       
       .container .p {
@@ -156,7 +169,7 @@ main.route-about{
         left: 99px;
         position: absolute;
         top: 0;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-4);
         font-size: 40px;
@@ -189,7 +202,7 @@ main.route-about{
         width: 1022px;
         height: 479px;
         top: 494px;
-        left: 0;
+        left: -70px;
       }
       
       .container .vision {
@@ -197,7 +210,7 @@ main.route-about{
         width: 438px;
         height: 294px;
         top: 102px;
-        left: 588px;
+        left: 700px;
       }
       
       .container .description-2 {
@@ -218,7 +231,7 @@ main.route-about{
         left: 126px;
         position: absolute;
         top: 0;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-4);
         font-size: 40px;
@@ -230,10 +243,11 @@ main.route-about{
       
       .container .overlap-group-wrapper {
         position: absolute;
-        width: 572px;
+        width: auto;
         height: 479px;
         top: 0;
-        left: 0;
+        left: 50px;
+        transform: scale(0.8);
       }
       
       .container .overlap-group-2 {
@@ -248,49 +262,50 @@ main.route-about{
         position: absolute;
         width: 174px;
         height: 187px;
-        top: 234px;
-        left: 0;
+        top: 370px;
+        left: -30px;
       }
       
       .container .vector-2 {
         position: absolute;
         width: 181px;
         height: 181px;
-        top: 0;
-        left: 347px;
+        top: 20px;
+        left: 447px;
       }
       
       .container .image-2 {
         position: absolute;
-        width: 444px;
-        height: 317px;
-        top: 44px;
-        left: 37px;
-        object-fit: cover;
+        height: 100%;
+        top: 70px;
+        left: 0px;
+        object-fit:contain;
       }
       
       .container .separator {
         position: absolute;
-        width: 987px;
+        opacity: 0.5;
+        width: 1000px;
         height: 2px;
-        top: 1828px;
-        left: 156px;
+        top: 1970px;
+        left: 160px;
       }
       
       .container .about-creators {
-        position: absolute;
+        position: relative;
         width: 892px;
         height: 872px;
         top: 1938px;
-        left: 196px;
+        left: 230px;
       }
       
       .container .title {
         position: absolute;
         width: 467px;
-        top: 0;
+        top: 130px;
+        bottom: 600px;
         left: 211px;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-4);
         font-size: 50px;
@@ -309,20 +324,22 @@ main.route-about{
       }
       
       .container .overlap-group-3 {
+        top: 100px;
         position: relative;
         width: 220px;
         height: 353px;
       }
       
       .container .card {
-        height: 319px;
-        top: 34px;
+        height: 350px;
+        top: 10px;
         position: absolute;
         width: 220px;
         left: 0;
       }
       
       .container .image-3 {
+        object-fit: contain;
         position: absolute;
         width: 193px;
         height: 193px;
@@ -332,9 +349,9 @@ main.route-about{
       
       .container .description-3 {
         width: 176px;
-        top: 307px;
+        top: 287px;
         left: 22px;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         line-height: normal;
         position: absolute;
@@ -349,10 +366,10 @@ main.route-about{
         position: absolute;
         width: 157px;
         left: 31px;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-3);
-        font-size: 30px;
+        font-size: 24px;
         text-align: center;
         letter-spacing: 0;
         line-height: normal;
@@ -369,9 +386,9 @@ main.route-about{
       
       .container .description-4 {
         width: 176px;
-        top: 307px;
-        left: 30px;
-        font-size: 18px;
+        top: 287px;
+        left: 22px;
+        font-size: 16px;
         text-align: center;
         line-height: normal;
         position: absolute;
@@ -394,10 +411,10 @@ main.route-about{
         position: absolute;
         width: 157px;
         left: 31px;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-3);
-        font-size: 30px;
+        font-size: 24px;
         text-align: center;
         letter-spacing: 0;
         line-height: normal;
@@ -406,7 +423,7 @@ main.route-about{
       
       .container .member-2 {
         height: 357px;
-        top: 515px;
+        top: 615px;
         left: 0;
         position: absolute;
         width: 224px;
@@ -416,6 +433,7 @@ main.route-about{
         position: relative;
         width: 220px;
         height: 357px;
+        overflow: visible;
       }
       
       .container .card-2 {
@@ -428,7 +446,7 @@ main.route-about{
       
       .container .description-5 {
         width: 176px;
-        top: 314px;
+        top: 300px;
         left: 21px;
         font-size: 18px;
         text-align: center;
@@ -445,10 +463,10 @@ main.route-about{
         position: absolute;
         width: 157px;
         left: 31px;
-        font-family: "Soft Marshmallow-Regular", Helvetica;
+        font-family: "Soft Marshmallow";
         font-weight: 400;
         color: var(--variable-collection-color-3);
-        font-size: 30px;
+        font-size: 24px;
         text-align: center;
         letter-spacing: 0;
         line-height: normal;
@@ -457,7 +475,7 @@ main.route-about{
       
       .container .member-3 {
         height: 357px;
-        top: 515px;
+        top: 615px;
         left: 335px;
         position: absolute;
         width: 224px;
@@ -465,7 +483,7 @@ main.route-about{
       
       .container .member-4 {
         height: 357px;
-        top: 515px;
+        top: 615px;
         left: 670px;
         position: absolute;
         width: 224px;
@@ -481,7 +499,7 @@ main.route-about{
       
       .container .description-6 {
         width: 176px;
-        top: 312px;
+        top: 300px;
         left: 22px;
         font-size: 18px;
         text-align: center;
