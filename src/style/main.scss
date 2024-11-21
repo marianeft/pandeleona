@@ -10,18 +10,18 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("../fonts/VarelaRound-Regular.ttf");
+  src: url("/fonts/VarelaRound-Regular.ttf") format('truetype'); /* Correct the file path */
   font-family: "Varela Round";
   font-weight: 400;
 }
+
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("../fonts/Soft Marshmallow.otf");
-  font-family: "Marshie";
+  src: url("/fonts/SoftMarshmallow.otf") format('opentype'); /* Correct the file path */
+  font-family: "Soft Marshmallow"; /* Fixed typo in font family name */
   font-weight: 400;
 }
-
 
 * {
   margin: 0;
@@ -165,14 +165,15 @@ nav {
 }
 
 footer{
-  font-family: "Soft Marshmallow";
+  font-family: "Valera Round";
 height: 60px;
 width: 100%;
 display: flex;
-background-color: #E9592B;
+background-color: #1F2123;
+color: #FCF9F5;
 justify-content: center;
 padding: 10px;
-font-size: 1.5rem;
+font-size: 1rem;
 
 .logo{
   display: flex;

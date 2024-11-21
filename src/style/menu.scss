@@ -1,4 +1,20 @@
 main.route-menu{
+
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/fonts/VarelaRound-Regular.ttf") format('truetype'); /* Correct the file path */
+    font-family: "Varela Round";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/fonts/SoftMarshmallow.otf") format('opentype'); /* Correct the file path */
+    font-family: "Soft Marshmallow"; /* Fixed typo in font family name */
+    font-weight: 400;
+  }
   
   .menu-page {
     width: 100%;
